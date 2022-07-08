@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import AlertContext from '../../context/alert/AlertContext'
 import GithubContext from '../../context/github/GithubContext'
 
 import Spinner from '../layouts/Spinner'
@@ -9,7 +10,7 @@ const UserResults = () => {
 
     const {users, loading,} = useContext(GithubContext)
 
-
+   
     if(!loading){
 
         return (
